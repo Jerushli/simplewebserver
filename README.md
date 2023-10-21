@@ -21,8 +21,6 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
-Done by: JERUSHLIN JOSE
-Reg NO : 212222240039
 
 ```
 Done by: JERUSHLIN JOSE
