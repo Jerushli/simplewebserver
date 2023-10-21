@@ -28,25 +28,33 @@ Reg NO : 212222240039
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webserver</title>
+<title>Jeru's Webserver</title>
 </head>
+
 <body>
-    <h1>Top 5 Revenue Companies</h1>
-    <ol>
-        <li>Microsoft</li>
-        <li>Oracle</li>
-        <li>IBM</li>
-        <li>Accenture</li>
-        <li>SAP</li>
-    </ol>
+<h1>Top 5 revenue generating companies</h1>
+<hr>
+<h2>
+<ol>
+<li>Apple</li>
+<li>Amazon</li>
+<li>Microsoft</li>
+<li>Infosys</li>
+<li>Samsung</li>
+</ol>
+</h2>   
+
+<h1>Done by Jerushlin jose JB(212222240039)
+
 </body>
 </html>
+
 """
+
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -54,16 +62,14 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',8080)
+server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-
-
 ```
 ## OUTPUT:
 
-![image](https://github.com/Dhanush12022004/simplewebserver/assets/128135558/37426707-fd11-4a36-b64c-c261626c5d04)
+![image](https://github.com/Jerushli/simplewebserver/assets/120041243/3107d737-26f6-4d5d-b773-2aa6f239ebe7)
 
 
 
